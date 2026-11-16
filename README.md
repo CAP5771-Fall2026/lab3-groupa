@@ -35,6 +35,24 @@ jupyter notebook visualize.ipynb
 
 `visualize.ipynb` loads the Spotify dataset via `kagglehub`, describes the features, and shows:
 
-- A **seaborn correlation heatmap** of audio features
-- An **interactive Plotly heatmap** of the same correlations
+- A danceability histogram
+- An **interactive Plotly correlation heatmap** of audio features
 - A short interpretation of the patterns
+
+## Streamlit app (Part 3)
+
+Run the interactive heatmap app locally:
+
+```bash
+source .venv/bin/activate
+streamlit run app.py
+```
+
+Interactive controls in the sidebar:
+
+- **Genre** multiselect filter
+- **Popularity range** slider
+- **Features in heatmap** multiselect
+- **Color scale** dropdown
+
+Screenshots of the running app are in `screenshots/`.
