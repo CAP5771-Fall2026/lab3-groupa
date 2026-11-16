@@ -4,5 +4,7 @@ voila
 streamlit
 matplotlib
 numpy
+seaborn
+plotly
 kagglehub
 ipywidgets
