@@ -1,5 +1,7 @@
 # lab3-groupa
 
+Johnny Dai, Kendrick Jones, Sammy Morales
+
 Collaborative lab: interactive Spotify data visualization and deployment experiments (Voilà, Binder, Streamlit, Docker).
 
 ## Dataset
