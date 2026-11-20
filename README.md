@@ -56,3 +56,20 @@ Interactive controls in the sidebar:
 - **Color scale** dropdown
 
 Screenshots of the running app are in `screenshots/`.
+
+## Docker
+
+The `Dockerfile` installs only the app's dependencies (`requirements-app.txt`). It also downloads the Kaggle dataset while the image is being built, so the container doesn't need to download anything when it starts.
+
+```bash
+docker build -t spotify-heatmap .
+docker run -d --name spotify-heatmap -p 8501:8501 spotify-heatmap
+```
+
+Open http://localhost:8501. If port 8501 is already in use (for example, by a local `streamlit run`), map the app to a different port with `-p 8502:8501`.
+
+To stop the container and remove it:
+
+```bash
+docker rm -f spotify-heatmap
+```
